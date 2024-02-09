@@ -19,7 +19,6 @@
     "@rollup/plugin-babel": "^5.2.3",
     "@rollup/plugin-commonjs": "^17.1.0",
     "@rollup/plugin-node-resolve": "^11.1.1",
-    "asciidoctor.js": "1.5.9",
     "auth0-js": "^9.14.0",
     "autoprefixer": "~9.7",
     "browser-pack-flat": "~3.4",
@@ -71,6 +70,7 @@
   },
   "scripts": {
     "start": "LIVERELOAD=true gulp preview",
+    "test": "node src/demo/build.js",
     "lint": "npm run lint:css && npm run lint:js",
     "lint:css": "stylelint \"src/css/**/*.css\"",
     "lint:js": "eslint gulpfile.js \"gulp.d/**/*.js\" \"src/{helpers,js}/**/*.js\"",
@@ -80,6 +80,8 @@
     "@antora/cli": "^2.3.3",
     "@antora/site-generator-default": "^2.3.3",
     "@neo4j-ndl/base": "^2.0.0",
+    "asciidoctor": "^3.0.2",
+    "asciidoctor-emoji": "^0.5.0",
     "font-awesome": "^4.7.0"
   },
   "husky": {

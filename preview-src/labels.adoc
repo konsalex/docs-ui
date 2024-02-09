@@ -1,7 +1,33 @@
+:page-theme: docs
+
 = Labels
 
 
 == All the labels
+
+emoticon:wink[]
+emoticon:grin[]
+emoticon:x[]
+
+emoji:wink[]
+emoji:bear[]
+
+label[{type: "aura"}Neo4j Aura]
+label:primary[Neo4j]
+label:success[This is a label]
+label:warning[Enterprise Edition]
+label:danger[Enterprise Edition]
+
+// Log Warning that this label should not be used
+label:non-success[Enterprise Edition]
+
+`aura-label` -> label:success
+`apoc-full` -> label:success
+
+
+[shout]
+Say it loud.
+Say it proud.
 
 ++++
 <div class="box">
@@ -99,6 +125,7 @@
 <div class="box">
   <span class="label label--deprecated">Deprecated</span>
 </div>
+
 
 <div class="box">
   <span class="label label--alpha">Alpha</span>
